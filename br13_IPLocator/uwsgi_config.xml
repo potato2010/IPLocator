@@ -1,0 +1,11 @@
+<uwsgi>
+     <pythonpath>/data/server/br13_IPLocator</pythonpath>
+     <module>br13_IPLocator_redis</module>
+     <callable>app</callable>
+     <socket>0.0.0.0:9013</socket>
+     <master/>
+	 <pidfile>logs/uwsgi.pid</pidfile>
+<!--	 <daemonize>logs/uwsgi_myapp.log</daemonize>  -->
+     <processes>4</processes>
+     <disable-logging>false</disable-logging>
+</uwsgi>
